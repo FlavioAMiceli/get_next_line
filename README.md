@@ -2,7 +2,7 @@
 Function used to read data one line at a time.
 
 ### TOC
-* [What is get_next_line?](#what is get_next_line)
+* [What is get_next_line?](#what-is-get_next_line)
 * [What's in it?](#whats-in-it)
 * [Installation](#installation)
 
