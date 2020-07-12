@@ -19,7 +19,16 @@ It's a function that returns the next line from a file descriptor each time it i
 My implementation can handle different file descriptors in the same program.
 
 ### Installation
-The function is added to libft.a using the included makefile.
+According to the [subject][3] this project can't contain a makefile.
+I have included it in my [libft][2] project, so the easiest way to use it is from there.
+
+This repo contains my libft as it was when I worked on this project.
+The way this project was compiled for validation is as follows.
+
+- make -C libft/ fclean && make -C libft/
+- clang -Wall -Wextra -Werror -I libft/includes -o get_next_line.o -c get_next_line.c
+- clang -Wall -Wextra -Werror -I libft/includes -o main.o -c main.c
+- clang -o test_gnl main.o get_next_line.o -I libft/includes -L libft/ -lft
 
 [1]: https://www.codam.nl/
 [2]: https://github.com/FlavioAMiceli/libft
